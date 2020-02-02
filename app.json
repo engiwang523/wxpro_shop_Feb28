@@ -3,8 +3,8 @@
     "pages/index/index",
     "pages/login/login",
     "pages/detail/detail",
-    "pages/shopcar/shopcar",
-    "pages/categroy/categroy",
+    "pages/shopcars/shopcars",
+    "pages/categories/categories",
     "pages/find/find",
     "pages/class/class",
     "pages/my/my",
@@ -37,13 +37,13 @@
         "selectedIconPath": "images/home_selected.png"
       },
       {
-        "pagePath": "pages/categroy/categroy",
+        "pagePath": "pages/categories/categories",
         "text": "分类",
         "iconPath": "images/class_unselected.png",
         "selectedIconPath": "images/class_selected.png"
       },
       {
-        "pagePath": "pages/shopcar/shopcar",
+        "pagePath": "pages/shopcars/shopcars",
         "text": "购物车",
         "iconPath": "images/shopcar_unselected.png",
         "selectedIconPath": "images/shopcar_selected.png"
