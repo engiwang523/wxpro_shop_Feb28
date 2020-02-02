@@ -4,6 +4,8 @@
     "pages/login/login",
     "pages/detail/detail",
     "pages/shopcars/shopcars",
+    "pages/address/address",
+    "pages/order/order",
     "pages/categories/categories",
     "pages/my/my",
     "pages/collection/collection",

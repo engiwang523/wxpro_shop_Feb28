@@ -25,9 +25,9 @@ Page({
 
 
   },
-  toMGoods:function(){
+  toOrder:function(){
     wx.navigateTo({
-      url: '/pages/mgoods/mgoods',
+      url: '/pages/order/order',
       success: function (res) {
         // success
       },
@@ -53,9 +53,9 @@ Page({
       }
     })
   },
-  toBlacklist: function() {
+  toAddress: function() {
     wx.navigateTo({
-      url: '/pages/blacklist/blacklist',
+      url: '/pages/address/address',
       success: function(res) {
         // success
       },

@@ -4,11 +4,11 @@
     <text class="txt_my_nickname">{{nickname}}</text>
   </view>
 
-  <view class="view_my_function_item" bindtap='toMGoods' >
+  <view class="view_my_function_item" bindtap='toOrder' >
     <image class="img_my_function_item_pic" src="/images/my_goods.png"></image>
     <text class="txt_my_function_item_name">我的订单</text>
   </view>
-  <view class="view_my_function_item" bindtap='toCollection'>
+  <view class="view_my_function_item" bindtap='toAddress'>
     <image class="img_my_function_item_pic" src="/images/ic_collection.png"></image>
     <text class="txt_my_function_item_name">我的地址</text>
   </view>
