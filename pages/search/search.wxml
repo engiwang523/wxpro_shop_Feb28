@@ -5,7 +5,7 @@
       <input class="input_search_word" bindinput="content" placeholder="请输入关键字" />
     </view>
   </view>
- <button size='mini' type='primary' bindtap='onSearch'>搜索</button>
+ <button style='background-color:black;' size='mini' type='primary' bindtap='onSearch'>搜索</button>
 </view>
 
 

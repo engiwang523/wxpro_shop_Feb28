@@ -1,15 +1,14 @@
 {
   "pages": [
+    "pages/pgoods/pgoods",
     "pages/index/index",
     "pages/login/login",
     "pages/detail/detail",
     "pages/shopcars/shopcars",
     "pages/categories/categories",
     "pages/find/find",
-    "pages/class/class",
     "pages/my/my",
-    "pages/pgoods/pgoods",
-    "pages/blacklist/blacklist",
+    "pages/class/class",
     "pages/collection/collection",
     "pages/search/search",
     "pages/mgoods/mgoods",
