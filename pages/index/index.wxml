@@ -1,0 +1,66 @@
+<!--图片轮播-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" indicator-color="#fff" interval="5000" duration="1000" style="width:100%;height:390rpx;">
+    <block wx:for="{{adList}}" wx:key="this">
+      <swiper-item>
+        <image src="{{item.pic}}" class="img_index_swiper_item" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='page_row' bindtap='toSearch'>
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input class="input_search_word" disabled placeholder="请输入关键字" value="{{searchValue}}" />
+    </view>
+  </view>
+  <button size='mini' type='primary'>搜索</button>
+</view>
+
+<!--功能分类-->
+<view class="view_index_function_class_list">
+  <block wx:for="{{functionClass}}" wx:key="this">
+    <view class="view_index_function_class_item" bindtap="toList" data-id="{{item.id}}">
+      <image class="img_index_function_class_item" src="{{item.icon}}" />
+      <text class="txt_index_function_class_item">{{item.text}}</text>
+    </view>
+  </block>
+</view>
+
+<view style="display:flex">
+  <text class="txt_index_title">最新发布</text>
+  <image  style="margin-left:10rpx;width:32rpx;height:32rpx;" src="/images/lastnew_goods.png"></image>
+</view>
+<view class="view_index_lastnew_goods_item">
+  <block wx:for="{{lastNew}}" wx:key="this">
+    <view class="view_index_goods_item" bindtap="toDetailPage" data-id="{{item.gid}}">
+      <view class="view_index_goods_item_top">
+        <image class="img_index_useravator" src="{{item.headurl}}" />
+        <view class="view_index_goods_item_top_right">
+          <text class="txt_index_username">{{item.nickname}}</text>
+          <text class="txt_index_createtime">{{item.addTime}}</text>
+        </view>
+      </view>
+      <image class="img_index_goods_pic" src="{{item.pic}}"></image>
+      <text class="txt_index_goods_title">{{item.title}}</text>
+      <view>
+        <text class="txt_index_goods_price">{{item.price==0?'免费':('￥'+item.price)}}</text>
+        <text class="txt_index_goods_oldprice">￥{{item.oldPrice}}</text>
+      </view>
+      <view class="view_index_line"></view>
+      <view class="view_index_bottom">
+        <image class="img_index_goods_views" src="/images/views.png"></image>
+        <text class="txt_index_bottom_views">{{item.browCount}}</text>
+        <text class="txt_index_bottom_class">{{item.cName}}</text>
+        <block wx:if="{{item.pinkage}}">
+          <text class="txt_index_bottom_way">包邮</text>
+        </block>
+        <block wx:else>
+          <text class="txt_index_bottom_way">自取</text>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

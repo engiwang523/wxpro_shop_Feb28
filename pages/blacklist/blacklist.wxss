@@ -1,0 +1,50 @@
+.view_my_function_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  height: 100rpx;
+  padding: 10rpx;
+}
+
+.img_my_function_item_pic {
+  width: 46rpx;
+  height: 46rpx;
+  margin-left: 30rpx;
+}
+
+.txt_my_function_item_name {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.img_my_userinfo {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-left: 50rpx;
+}
+
+.view_my_userinfo {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt_my_nickname {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #56abe4;
+}
+
+.img_blacklist_recove {
+  width: 64rpx;
+  height: 64rpx;
+  display: inline-block;
+}
+.p_item_name {
+  margin-left: 60rpx;
+  color: #515151;
+  font-size: 30rpx;
+}

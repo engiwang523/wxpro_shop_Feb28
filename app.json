@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/detail/detail",
+    "pages/shopcar/shopcar",
+    "pages/categroy/categroy",
+    "pages/find/find",
+    "pages/class/class",
+    "pages/my/my",
+    "pages/pgoods/pgoods",
+    "pages/blacklist/blacklist",
+    "pages/collection/collection",
+    "pages/search/search",
+    "pages/mgoods/mgoods",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#56abe4",
+    "navigationBarTitleText": "潮流之家",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home_unselected.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/categroy/categroy",
+        "text": "分类",
+        "iconPath": "images/home_unselected.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "images/home_unselected.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my_unselected.png",
+        "selectedIconPath": "images/my_selected.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

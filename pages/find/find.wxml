@@ -1,0 +1,9 @@
+<view >
+    <block wx:for="{{functionList}}" wx:key="this">
+        <view class="view_find_function_item">
+            <image class="img_find_function_item_pic" src="{{item.pic}}"></image>
+            <text class="txt_find_function_item_name">{{item.txt}}</text>
+        </view>
+    </block>
+    
+</view>

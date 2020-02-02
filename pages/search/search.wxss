@@ -1,0 +1,253 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.img_index_search {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 3;
+  align-items: center;
+}
+
+.img_index_swiper_item {
+  width: 100%;
+  height: 100%;
+}
+
+.view_index_function_class_list {
+  display: flex;
+  margin-top: -20rpx;
+  padding: 20rpx;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.view_index_function_class_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_index_function_class_item {
+  width: 52rpx;
+  height: 52rpx;
+}
+
+.txt_index_function_class_item {
+  font-size: 22rpx;
+  margin-top: 15rpx;
+}
+
+.view_index_urgent {
+  margin: 10rpx;
+  width: 97%;
+  height: 220rpx;
+  border: 1rpx solid orangered;
+  border-radius: 1%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_index_rugent_logo {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.txt_index_urgent_item_class {
+  font-size: 22rpx;
+  color: red;
+}
+
+.img_index_more {
+  width: 6%;
+  height: 50rpx;
+}
+
+.img_index_useravator {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 2rpx;
+  border-radius: 50%;
+}
+
+.view_index_goods_item_top {
+  display: flex;
+  flex-direction: row;
+}
+
+.view_index_goods_item {
+  width: 46%;
+  display: flex;
+  margin: 10rpx;
+  flex-direction: column;
+  border: 1rpx solid #e6e6e6;
+}
+
+.view_index_goods_item_top_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+
+.txt_index_username {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: #56abe4;
+}
+
+.txt_index_createtime {
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+.img_index_goods_pic {
+  width: 100%;
+  height: 200rpx;
+}
+
+.txt_index_goods_title {
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  max-width: 100%;
+  height: 50rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.txt_index_goods_price {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: red;
+}
+
+.txt_index_goods_oldprice {
+  margin-left: 30rpx;
+  font-size: 22rpx;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.view_index_line {
+  width: 100%;
+  height: 0.1rpx;
+  background: #e6e6e6;
+}
+
+.img_index_goods_views {
+  width: 46rpx;
+  height: 36rpx;
+  margin-top: -2;
+}
+
+.view_index_bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.txt_index_bottom_views {
+  font-size: 22rpx;
+  margin-top: 4rpx;
+}
+
+.txt_index_bottom_class {
+  margin-top: 2rpx;
+  margin-left: 30rpx;
+  font-size: 22rpx;
+  color: limegreen;
+  border: 1rpx solid limegreen;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  border-radius: 2rpx;
+}
+
+.txt_index_bottom_way {
+  margin-top: 2rpx;
+  margin-left: 30rpx;
+  font-size: 22rpx;
+  color: red;
+  border: 1rpx solid red;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  border-radius: 2rpx;
+}
+
+.view_index_lastnew_goods_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.view_index_pai_goods_item {
+  width: 100%;
+  display: flex;
+  margin: 10rpx;
+  flex-direction: column;
+  border: 1rpx solid #e6e6e6;
+}
+
+.txt_index_pai_goods_last_price {
+  color: red;
+  background-color: #f68974;
+  padding: 5rpx;
+}
+
+.img_index_pai_goods_item_pic {
+  width: 32%;
+  height: 200rpx;
+  margin: 5rpx;
+}
+
+.view_index_pai_goods_item_top_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150rpx;
+}
+
+.txt_index_pai_goods_bottom_state {
+  margin-left: 20rpx;
+  font-size: 22rpx;
+  background-color: #f68974;
+  padding: 8rpx;
+  color: white;
+}
+
+.txt_index_title {
+  margin: 10rpx;
+  font-size: 32rpx;
+  color: #56abe4;
+}
+
+/* .v_home {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */

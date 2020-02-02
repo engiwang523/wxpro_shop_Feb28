@@ -1,0 +1,42 @@
+<view class='page_row'>
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input class="input_search_word" bindinput="content" placeholder="请输入关键字" />
+    </view>
+  </view>
+ <button size='mini' type='primary' bindtap='onSearch'>搜索</button>
+</view>
+
+
+<view class="view_index_lastnew_goods_item">
+  <block wx:for="{{goodsList}}" wx:key="this">
+    <view class="view_index_goods_item" bindtap="toDetailPage" data-id="{{item.gid}}">
+      <view class="view_index_goods_item_top">
+        <image class="img_index_useravator" src="{{item.headurl}}" />
+        <view class="view_index_goods_item_top_right">
+          <text class="txt_index_username">{{item.nickname}}</text>
+          <text class="txt_index_createtime">{{item.addTime}}</text>
+        </view>
+      </view>
+      <image class="img_index_goods_pic" src="{{item.pic}}"></image>
+      <text class="txt_index_goods_title">{{item.title}}</text>
+      <view>
+        <text class="txt_index_goods_price">{{item.price==0?'免费':('￥'+item.price)}}</text>
+        <text class="txt_index_goods_oldprice">￥{{item.oldPrice}}</text>
+      </view>
+      <view class="view_index_line"></view>
+      <view class="view_index_bottom">
+        <image class="img_index_goods_views" src="/images/views.png"></image>
+        <text class="txt_index_bottom_views">{{item.browCount}}</text>
+        <text class="txt_index_bottom_class">{{item.cName}}</text>
+        <block wx:if="{{item.pinkage}}">
+          <text class="txt_index_bottom_way">包邮</text>
+        </block>
+        <block wx:else>
+          <text class="txt_index_bottom_way">自取</text>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

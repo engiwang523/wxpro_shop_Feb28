@@ -1,0 +1,20 @@
+<block wx:for="{{goodsList}}" wx:key="this">
+  <view bindtap="toDetailPage" data-id="{{item.gid}}" bindlongpress='removeCollection'>
+    <view class="view_index_goods_item_top">
+      <image class="img_index_useravator" src="{{item.headurl}}" />
+      <view class="view_index_goods_item_top_right">
+        <text class="txt_index_username">{{item.nickname}}</text>
+        <text class="txt_index_createtime">{{item.addTime}}</text>
+      </view>
+      <view class='v_state'>
+        <text class='txt_state'>{{item.state?'已下架':''}}</text>
+      </view>
+    </view>
+    <view>
+      <text class='txt_title'>{{item.title}}</text>
+      <image mode='center' class="img_goods_pic" src='{{item.pics}}'></image>
+    </view>
+    <text class="txt_more">>></text>
+    <view style="margin-top:60rpx;margin-left:20rpx;margin-right:20rpx;width:95%;height:3rpx; background-color:#ddd8d8;"></view>
+  </view>
+</block>

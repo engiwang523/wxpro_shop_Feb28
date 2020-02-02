@@ -1,0 +1,112 @@
+<!-- <view> -->
+
+<!--图片区域-->
+<!-- <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">-->
+<swiper indicator-dots="true" indicator-color="#fff" autoplay="true" interval="5000" duration="1000" style="width:100%;height:590rpx;">
+  <block wx:for="{{goods.pics}}" wx:key="this">
+    <swiper-item>
+      <image src="{{item}}" class="img_detail_pic"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- </scroll-view>-->
+
+
+<!--顶部-->
+<view class="view_dtail_goods_top_area">
+  <view class="view_detail_goods_item_top">
+    <image class="img_detail_useravator" src="{{goods.headurl}}" />
+    <view class="view_detail_goods_item_top_right">
+      <text class="txt_detail_username">{{goods.nickname}}</text>
+      <text class="txt_detail_createtime">{{goods.addTime}}</text>
+    </view>
+  </view>
+  <view class="view_detail_postion_area">
+    <image class="view_detail_postion" src="/images/postion.png"></image>
+    <text class="txt_detail_username">{{goods.address}}</text>
+  </view>
+</view>
+<!--价格区域-->
+<view style="margin:30rpx;">
+  <block wx:if="{{goods[0].isPai}}">
+    <text class="txt_index_goods_max_price">MAX:￥{{goods.gMaxPrice}}</text>
+    <text class="txt_index_goods_price">底价：￥{{goods.gPrice}}</text>
+  </block>
+  <block wx:else>
+    <text class="txt_index_goods_price">{{goods.price==0?'免费':('￥'+goods.price)}}</text>
+  </block>
+  <text class="txt_index_goods_oldprice">原价￥{{goods.oldPrice}}</text>
+
+</view>
+<!--类型、送货方式、浏览量-->
+<view class="view_detail_type_way_views_area">
+  <block wx:if="{{goods.pinkage}}">
+    <text class="txt_detail_type_way_views">包邮</text>
+  </block>
+  <block wx:else>
+    <text class="txt_detail_type_way_views">自取</text>
+  </block>
+  <text class="txt_detail_type_way_views">{{goods.cName}}</text>
+  <text class="txt_detail_type_way_views">浏览量：{{goods.browCount}}</text>
+</view>
+<!--简介-->
+<view style='margin:30rpx;'>
+  <text>
+        {{goods.content}}
+    </text>
+</view>
+<!--评论区域-->
+<view style='magrin-top:150rpx;'>
+  <image class="view_detail_postion" src="/images/lastnew_goods.png"></image>评论({{comments.length}})
+</view>
+<scroll-view class="scroll-view_V" scroll-y="true" style="height: 300px;width: 100%;">
+  <block wx:for="{{comments}}" wx:key="this">
+    <view class="view_dtail_goods_top_area">
+      <view class="view_detail_goods_item_top">
+        <view class="view_detail_goods_item_top_right">
+          <image class="img_detail_useravator" src="{{item.headurl}}" />
+          <text class="txt_detail_username">{{item.nickname}}</text>
+        </view>
+        <view class="view_detail_goods_item_top_right">
+          <text class="txt_detail_createtime">{{item.addTime}}</text>
+          <block wx:if="{{item.isCJ}}">
+            <text class="txt_detail_user_comment_cj">{{item.content}}</text>
+          </block>
+          <block wx:else>
+            <text class="txt_detail_user_comment">{{item.content}}</text>
+          </block>
+
+
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<!--底部操作按钮-->
+
+<view class="detail-nav">
+  <image bindtap="addBlacklist" style='width:46rpx;height:36rpx;' src="/images/ic_heimingdan.png" />
+  <view class="line_nav"></view>
+  <image bindtap="addCollection" style='width:46rpx;height:36rpx;' src="{{isCollection?'/images/ic_collection.png':'/images/ic_unclloction.png'}}" />
+  <button class="button-green" bindtap="addCar" bindtap='showDialogBtn'>评论</button>
+  <button class="button-red" bindtap="immeBuy" bindtap='callPhone'>联系卖家</button>
+</view>
+
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">发表评论</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <input placeholder-class="input-holder" bindblur="input_content" type="text" maxlength="256" bindinput="inputChange" class="input" placeholder="请输入评论"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+<!-- </view> -->

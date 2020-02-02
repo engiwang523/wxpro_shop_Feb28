@@ -1,0 +1,19 @@
+<view>
+  <view class="view_my_userinfo">
+    <image class="img_my_userinfo" src="{{headurl}}"></image>
+    <text class="txt_my_nickname">{{nickname}}</text>
+  </view>
+
+  <view class="view_my_function_item" bindtap='toMGoods' >
+    <image class="img_my_function_item_pic" src="/images/my_goods.png"></image>
+    <text class="txt_my_function_item_name">商品管理</text>
+  </view>
+  <view class="view_my_function_item" bindtap='toCollection'>
+    <image class="img_my_function_item_pic" src="/images/ic_collection.png"></image>
+    <text class="txt_my_function_item_name">收藏</text>
+  </view>
+   <view bindtap='toBlacklist' class="view_my_function_item">
+    <image class="img_my_function_item_pic" src="/images/ic_heimingdan.png"></image>
+    <text class="txt_my_function_item_name">黑名单</text>
+  </view>
+</view>

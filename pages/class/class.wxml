@@ -1,0 +1,29 @@
+<view style=" background: #eee;">
+    <!--热门分类-->
+    <image class="img_class_hot_classify" src="/images/hot_class.png"></image><text class="txt_class_all_classify_item_title">热门分类</text>
+    <view>
+        <view class="view_class_hot_classify">
+            <block wx:for="{{hotClass}}" wx:key="this">
+            <view class="view_class_hot_classify_item">
+                <image class="img_class_hot_classify_item" src="{{item.icon}}"/>
+                <text class="txt_class_hot_classify_item">{{item.text}}</text>
+            </view>
+            </block>
+        </view> 
+    </view>
+    <!--所有的分类-->
+  <view>
+        <view class="view_class_all_classify">
+            <block wx:for="{{allClass}}" wx:key="this">
+            <view class="view_class_all_classify_item">
+                <image class="img_class_all_classify_item" src="{{item.icon}}"/>
+                <view class="txt_class_all_classify_item_textarea">
+                    <text class="txt_class_all_classify_item_title">{{item.text}}</text>
+                    <text class="txt_class_all_classify_item_subtitle">{{item.subText}}</text>
+                </view>                
+            </view>
+            </block>
+        </view> 
+    </view>
+    
+</view>
