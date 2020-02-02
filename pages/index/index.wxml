@@ -1,11 +1,18 @@
 <!--图片轮播-->
 <view>
   <swiper indicator-dots="true" autoplay="true" indicator-color="#fff" interval="5000" duration="1000" style="width:100%;height:390rpx;">
-    <block wx:for="{{adList}}" wx:key="this">
       <swiper-item>
-        <image src="{{item.pic}}" class="img_index_swiper_item" />
+        <image src="http://5b0988e595225.cdn.sohucs.com/images/20171218/bd94adeac9574da8b9df34f35d58737d.jpeg" class="img_index_swiper_item" />
       </swiper-item>
-    </block>
+      <swiper-item>
+        <image src="https://static.juksy.com/files/articles/72967/5a0ea8d340c03.png?m=widen&i=600&q=75" class="img_index_swiper_item" />
+      </swiper-item>
+      <swiper-item>
+        <image src="http://5b0988e595225.cdn.sohucs.com/images/20171218/d931c52cd74c47f0b033a1cb75f077e1.jpeg" class="img_index_swiper_item" />
+      </swiper-item>
+      <swiper-item>
+        <image src="http://5b0988e595225.cdn.sohucs.com/images/20171218/c4206498389446b3ab1066ee97013685.jpeg" class="img_index_swiper_item" />
+      </swiper-item>
   </swiper>
 </view>
 
@@ -16,7 +23,7 @@
       <input class="input_search_word" disabled placeholder="请输入关键字" value="{{searchValue}}" />
     </view>
   </view>
-  <button size='mini' type='primary'>搜索</button>
+  <button style="background-color:black;" size='mini' type='primary'>搜索</button>
 </view>
 
 <!--功能分类-->

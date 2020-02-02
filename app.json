@@ -17,7 +17,7 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#56abe4",
+    "navigationBarBackgroundColor": "#C67171",
     "navigationBarTitleText": "潮流之家",
     "navigationBarTextStyle": "white",
     "onReachBottomDistance": 50,
@@ -25,7 +25,7 @@
   },
   "tabBar": {
     "color": "#515151",
-    "selectedColor": "#eb4f38",
+    "selectedColor": "#C67171",
     "backgroundColor": "white",
     "borderStyle": "black",
     "position": "bottom",
@@ -39,14 +39,14 @@
       {
         "pagePath": "pages/categroy/categroy",
         "text": "分类",
-        "iconPath": "images/home_unselected.png",
-        "selectedIconPath": "images/home_selected.png"
+        "iconPath": "images/class_unselected.png",
+        "selectedIconPath": "images/class_selected.png"
       },
       {
         "pagePath": "pages/shopcar/shopcar",
         "text": "购物车",
-        "iconPath": "images/home_unselected.png",
-        "selectedIconPath": "images/home_selected.png"
+        "iconPath": "images/shopcar_unselected.png",
+        "selectedIconPath": "images/shopcar_selected.png"
       },
       {
         "pagePath": "pages/my/my",
